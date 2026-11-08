@@ -9,36 +9,45 @@
     <meta name="author" content="Atae Dayem Syed Mahmood Ullah">
 
     <meta property="og:title" content="Atae Dayem Syed Mahmood Ullah — International Programmes &amp; Transformation Leader">
-    <meta property="og:description" content="Strategic programme design combined with hands-on multi-country delivery, budget negotiation, risk management, and process improvement across 13+ nations.">
+    <meta property="og:description" content="Bridging UK charity governance with on-the-ground operational delivery across 13+ nations. From 1,000 annual clean water installations to £1m+ fixed-deadline humanitarian aid.">
     <meta property="og:type" content="website">
-
-    <!-- Fonts: Georgia for editorial elegance, system-ui for crisp uppercase tracking -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="site-home" id="top">
 
-    <!-- ✦ TOP ANNOUNCEMENT RIBBON ✦ -->
-    <div class="home-ribbon">
-        <span>Assurance Framework</span>
-        <a href="#governance" onclick="openFrameworkModal(); return false;">
-            VerifiAid™ · 40-check partner-assurance system across 6 weighted risk categories <b>→</b>
-        </a>
+    <!-- ✦ BESPOKE LIVE STATUS TICKER RIBBON ✦ -->
+    <div class="live-status-ribbon">
+        <div class="status-indicator">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Current Executive Portfolio</span>
+        </div>
+        <div>
+            Leading Multi-Country Programmes (£1M+ Portfolio) &amp; Operational Governance ·
+            <a href="#governance" onclick="openFrameworkModal(); return false;">
+                Explore VerifiAid™ Framework <b>→</b>
+            </a>
+        </div>
     </div>
 
-    <!-- ✦ STICKY HEADER ✦ -->
+    <!-- ✦ ELEVATED STICKY HEADER ✦ -->
     <header class="home-header">
-        <a class="home-logo" href="#top">
-            Atae Dayem <span>✦</span>
+        <a class="brand-crest-group" href="#top">
+            <div class="brand-crest" aria-hidden="true">AD</div>
+            <div class="brand-titles">
+                <span class="brand-title-main">
+                    Atae Dayem <span class="star">✦</span>
+                </span>
+                <span class="brand-title-sub">Syed Mahmood Ullah</span>
+            </div>
         </a>
 
         <nav aria-label="Main navigation">
-            <a href="#pillars">Pillars</a>
-            <a href="#about">About</a>
+            <a href="#pillars">Capabilities</a>
+            <a href="#about">Perspective</a>
             <a href="#governance">VerifiAid™</a>
-            <a href="#global">Global Reach</a>
-            <a href="#experience">Experience</a>
+            <a href="#global">Global Footprint</a>
+            <a href="#experience">Career History</a>
             <a href="#education">Credentials</a>
         </nav>
 
@@ -50,7 +59,8 @@
                     <line x1="3" y1="18" x2="21" y2="18"></line>
                 </svg>
             </button>
-            <a class="home-invite" href="#contact">Get in Touch</a>
+            <a class="btn-header-secondary" href="/cv">Executive CV</a>
+            <a class="btn-header-primary" href="#contact">Connect / Inquire</a>
         </div>
     </header>
 
@@ -62,12 +72,13 @@
         </div>
         <nav>
             <a href="#top">Overview <span>↗</span></a>
-            <a href="#pillars">Strategic Pillars <span>↗</span></a>
+            <a href="#pillars">Core Capabilities <span>↗</span></a>
             <a href="#about">The Perspective <span>↗</span></a>
             <a href="#governance">VerifiAid™ Framework <span>↗</span></a>
-            <a href="#global">Global Footprint <span>↗</span></a>
+            <a href="#global">Global Footprint (13+) <span>↗</span></a>
             <a href="#experience">Career History <span>↗</span></a>
             <a href="#education">Credentials &amp; Tools <span>↗</span></a>
+            <a href="/cv">Executive CV (Printable) <span>↗</span></a>
             <a href="#contact">Contact &amp; Connect <span>↗</span></a>
         </nav>
         <div class="mobile-nav-footer">
@@ -80,98 +91,192 @@
         <!-- ✦ HERO SECTION ✦ -->
         <section class="home-hero">
             <div class="home-hero-copy">
-                <p class="home-eyebrow">International Programmes &amp; Transformation Leader · Manchester, UK</p>
-                <h1>Strategic vision.<br/><em>Measurable impact.</em></h1>
+                <div class="hero-badge-pill">
+                    <span>✦</span> 18+ Years Transforming International Charity Portfolios
+                </div>
+                <h1>Strategic Governance.<br/><em>Humanitarian Delivery at Scale.</em></h1>
                 <p>
-                    Combining 18+ years across humanitarian assistance, international development, programme governance, £1m+ portfolio leadership and sustainable community transformation.
+                    Bridging high-level UK charity governance with on-the-ground operational delivery across South Asia, the Middle East, and vulnerable communities. From 1,000 annual clean water installations to £1m+ fixed-deadline humanitarian aid.
                 </p>
                 <div class="home-actions">
-                    <a href="#pillars">Explore Core Pillars</a>
-                    <a href="#about">Meet Atae Dayem <span>→</span></a>
+                    <a class="btn-hero-primary" href="#pillars">
+                        <span>Explore Core Capabilities</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </a>
+                    <a class="btn-hero-outline" href="#governance">
+                        <span>VerifiAid™ Assurance Model</span>
+                        <span>↗</span>
+                    </a>
+                    <a class="hero-cv-link" href="/cv">
+                        <span>Download Executive CV (PDF)</span>
+                        <span>→</span>
+                    </a>
                 </div>
             </div>
 
-            <div class="home-portrait-wrap">
-                <div class="home-portrait" aria-label="Portrait badge of Atae Dayem Syed Mahmood Ullah">
-                    <span class="portrait-star" aria-hidden="true">✦</span>
-                    <strong class="home-portrait-initials">AD</strong>
-                    <small>Atae Dayem Syed Mahmood Ullah</small>
-                    <span class="portrait-role">Head of Programmes &amp; Projects</span>
+            <!-- Bespoke Executive Showcase Card (Elevated & Distinctive) -->
+            <div class="hero-showcase-container">
+                <!-- Floating Badge Top-Right -->
+                <div class="floating-badge floating-badge-top">
+                    <div class="icon-box" aria-hidden="true">🏆</div>
+                    <div>
+                        <b>MSc Project Management</b>
+                        <small>Graduated with Distinction · UWE Bristol</small>
+                    </div>
                 </div>
-                <p>
-                    <b>MSc Project Management · Distinction</b>
-                    <i>University of the West of England · UWE Bristol</i>
-                </p>
+
+                <!-- Main Executive Frame -->
+                <div class="executive-frame-card">
+                    <div class="exec-card-header">
+                        <div class="exec-seal-emblem">AD</div>
+                        <span class="exec-tag">Senior Executive</span>
+                    </div>
+
+                    <div class="exec-card-body">
+                        <h3>Atae Dayem</h3>
+                        <p class="title">Head of Programmes &amp; Projects · MWF UK</p>
+
+                        <div class="exec-metrics-strip">
+                            <div class="exec-metric-col">
+                                <strong>£1M+</strong>
+                                <span>Portfolio</span>
+                            </div>
+                            <div class="exec-metric-col">
+                                <strong>13+</strong>
+                                <span>Nations</span>
+                            </div>
+                            <div class="exec-metric-col">
+                                <strong>9</strong>
+                                <span>Partners</span>
+                            </div>
+                        </div>
+
+                        <p style="font-size: 12.5px; color: #a4bece; line-height: 1.6; margin: 0;">
+                            Overseeing multi-country humanitarian delivery, partner due diligence, and board-level risk assurance across South Asia and international hubs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Floating Badge Bottom-Left -->
+                <div class="floating-badge floating-badge-bottom">
+                    <div class="icon-box" aria-hidden="true">🛡️</div>
+                    <div>
+                        <b>VerifiAid™ Creator</b>
+                        <small>40-Check Multi-Tier Partner Assurance</small>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- ✦ PROOF / CAREER SNAPSHOT BAR ✦ -->
-        <section class="home-proof" aria-label="Career snapshot and key performance metrics">
-            <span>£1m+ annual programme portfolio</span>
-            <b>✦</b>
-            <span>13+ countries</span>
-            <b>✦</b>
-            <span>9 delivery partners</span>
-            <b>✦</b>
-            <span>1,000 annual water installations</span>
-            <b>✦</b>
-            <span>UN ECOSOC Consultative Status</span>
-            <b>✦</b>
-            <span>99% on-time delivery</span>
+        <!-- ✦ PROOF & METRIC TICKER BAR ✦ -->
+        <section class="home-proof" aria-label="Quantified performance records">
+            <div class="proof-item">
+                <strong>£1M+</strong>
+                <span>Annual Portfolio</span>
+            </div>
+            <div class="proof-item">
+                <strong>13+</strong>
+                <span>Nations Delivered</span>
+            </div>
+            <div class="proof-item">
+                <strong>9</strong>
+                <span>Delivery Partners</span>
+            </div>
+            <div class="proof-item">
+                <strong>1,000</strong>
+                <span>Annual Water Wells</span>
+            </div>
+            <div class="proof-item">
+                <strong>UN ECOSOC</strong>
+                <span>Consultative NGO</span>
+            </div>
+            <div class="proof-item">
+                <strong>99%</strong>
+                <span>On-Time Delivery</span>
+            </div>
         </section>
 
-        <!-- ✦ STRATEGIC PILLARS / CORE CAPABILITIES ✦ -->
+        <!-- ✦ CORE CAPABILITIES / STRATEGIC PILLARS ✦ -->
         <section class="home-talk-preview" id="pillars">
             <div class="home-section-intro">
                 <div>
                     <p>Core Capabilities</p>
-                    <h2>Disciplined programme design.<br/>Transformational delivery at scale.</h2>
+                    <h2>Disciplined programme design.<br/><em>Transformational delivery at scale.</em></h2>
                 </div>
                 <a href="#experience">Explore career milestones <span>→</span></a>
             </div>
 
             <div class="home-talk-grid">
-                <!-- Card 01 -->
+                <!-- Pillar 01 -->
                 <article class="home-talk-card">
-                    <span class="card-number">01</span>
-                    <small class="card-tag">Portfolio Planning &amp; Standards</small>
+                    <div class="card-top-row">
+                        <span class="card-number">01</span>
+                        <svg class="card-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <small class="card-tag">Portfolio Standards</small>
                     <h3>Programme Transformation</h3>
                     <p class="card-summary">
-                        Helped move Minhaj Welfare Foundation from case-by-case delivery towards clear programme scopes, outcome expectations, standardised templates, partner reviews, and continuous improvement across 13+ countries.
+                        Helped transition Minhaj Welfare Foundation from ad-hoc emergency delivery into structured programme scopes, outcome expectations, standardised templates, and systematic delivery controls across 13+ countries.
                     </p>
+                    <div class="card-metric-badge">Standardised Portfolios Across 13+ Countries</div>
                     <b class="card-arrow" aria-hidden="true">↗</b>
                 </article>
 
-                <!-- Card 02 -->
+                <!-- Pillar 02 -->
                 <article class="home-talk-card">
-                    <span class="card-number">02</span>
-                    <small class="card-tag">Execution &amp; Delivery Controls</small>
+                    <div class="card-top-row">
+                        <span class="card-number">02</span>
+                        <svg class="card-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <small class="card-tag">Execution &amp; Scale</small>
                     <h3>Delivery Performance</h3>
                     <p class="card-summary">
-                        Coordinated nine delivery partners across two fixed-deadline seasonal food distribution programmes in 2026, achieving 99% on-time delivery across a combined budget of approximately £1m.
+                        Coordinated nine delivery partners across two fixed-deadline seasonal food distribution programmes in 2026, achieving 99% on-time completion across a combined budget of approximately £1m.
                     </p>
+                    <div class="card-metric-badge">99% On-Time Execution · 9 Partners</div>
                     <b class="card-arrow" aria-hidden="true">↗</b>
                 </article>
 
-                <!-- Card 03 -->
+                <!-- Pillar 03 -->
                 <article class="home-talk-card">
-                    <span class="card-number">03</span>
+                    <div class="card-top-row">
+                        <span class="card-number">03</span>
+                        <svg class="card-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                        </svg>
+                    </div>
                     <small class="card-tag">Infrastructure &amp; WASH</small>
                     <h3>Clean Water Access</h3>
                     <p class="card-summary">
-                        Oversaw delivery controls for approximately 1,000 rural water installations annually, with 100% on-schedule completion reported and end-to-end GPS database tracking linking records, inspections, and payments.
+                        Oversaw delivery controls for ~1,000 rural water installations annually with 100% on-schedule completion, linking installation records, contractor payments, GPS coordinates, and independent site inspections.
                     </p>
+                    <div class="card-metric-badge">1,000 Annual Installs · 100% On-Schedule</div>
                     <b class="card-arrow" aria-hidden="true">↗</b>
                 </article>
 
-                <!-- Card 04 -->
+                <!-- Pillar 04 -->
                 <article class="home-talk-card">
-                    <span class="card-number">04</span>
+                    <div class="card-top-row">
+                        <span class="card-number">04</span>
+                        <svg class="card-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
                     <small class="card-tag">Institutional Alliances</small>
-                    <h3>Partnership Development</h3>
+                    <h3>Partnership Growth</h3>
                     <p class="card-summary">
-                        Contributed to negotiating repeat delivery opportunities with international NGOs, including an ongoing annual scope valued at ~£150,000, alongside an 80% submission approval rate (12 of 15 project proposals approved).
+                        Negotiated repeat multi-year delivery scopes with international NGOs (including an ongoing ~£150,000 annual scope), achieving an 80% submission approval rate (12 of 15 project proposals approved).
                     </p>
+                    <div class="card-metric-badge">80% Win Rate · 12 of 15 Approved</div>
                     <b class="card-arrow" aria-hidden="true">↗</b>
                 </article>
             </div>
@@ -202,7 +307,7 @@
                 <article>
                     <span>01</span>
                     <h3>Executive Leadership</h3>
-                    <p>Head of Programmes &amp; Projects at Minhaj Welfare Foundation UK, steering £1m+ annual budgets and multi-partner delivery.</p>
+                    <p>Head of Programmes &amp; Projects at Minhaj Welfare Foundation UK, steering £1m+ annual budgets, 9 delivery partners, and board reporting.</p>
                 </article>
                 <article>
                     <span>02</span>
@@ -272,118 +377,92 @@
             </div>
         </section>
 
-        <!-- ✦ SELECTED LEADERSHIP HIGHLIGHTS ✦ -->
-        <section class="home-education-media" id="contributions">
-            <div class="home-education-media-heading">
+        <!-- ✦ PROPRIETARY GOVERNANCE INNOVATION: VERIFIAID™ (BESPOKE HUB) ✦ -->
+        <section class="governance-hub-section" id="governance">
+            <div class="governance-header-group">
                 <div>
-                    <small>Selected Contributions</small>
-                    <h2>Leadership forged in<br/>the field—governed<br/>from the board.</h2>
+                    <small>Proprietary Assurance Innovation</small>
+                    <h2>VerifiAid™: 40-Check Assurance.<br/><em>Six Weighted Risk Categories.</em></h2>
                 </div>
-                <p>
-                    From landmark capital infrastructure to real-time digital project tracking, Atae Dayem has helped institutions move from ad-hoc emergency operations to durable, audit-ready systems.
-                </p>
-            </div>
-
-            <div class="education-media-grid">
-                <!-- Contribution 1 -->
-                <article class="education-media-card">
-                    <div class="education-media-visual">
-                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#f3b61f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M3 21h18"></path>
-                            <path d="M9 8h1"></path>
-                            <path d="M9 12h1"></path>
-                            <path d="M9 16h1"></path>
-                            <path d="M14 8h1"></path>
-                            <path d="M14 12h1"></path>
-                            <path d="M14 16h1"></path>
-                            <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path>
-                        </svg>
-                    </div>
-                    <div class="education-media-card-body">
-                        <small>Capital Infrastructure</small>
-                        <h3>100-Bed Residential Facility</h3>
-                        <p>
-                            Acting as client-side governance lead for a 100-bed residential facility for vulnerable children, overseeing architect briefs, masterplan approvals, and delivery coordination.
-                        </p>
-                        <span>Strategic Governance ↗</span>
-                    </div>
-                </article>
-
-                <!-- Contribution 2 -->
-                <article class="education-media-card">
-                    <div class="education-media-visual">
-                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#11a6b5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                        </svg>
-                    </div>
-                    <div class="education-media-card-body">
-                        <small>Digital Transformation</small>
-                        <h3>Multi-Partner PM Platform</h3>
-                        <p>
-                            Designed and led the rollout of a unified project management system across nine delivery partners, standardizing reporting, digital milestone tracking, and payment gates.
-                        </p>
-                        <span>Digital Tracking ↗</span>
-                    </div>
-                </article>
-
-                <!-- Contribution 3 -->
-                <article class="education-media-card">
-                    <div class="education-media-visual">
-                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#f3b61f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <line x1="2" y1="12" x2="22" y2="12"></line>
-                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                        </svg>
-                    </div>
-                    <div class="education-media-card-body">
-                        <small>Institutional Impact</small>
-                        <h3>UN ECOSOC Consultative Status</h3>
-                        <p>
-                            Founded Dayemi Foundation in 2007, stewarding its expansion into an established NGO with six branches, six-figure international budgets, and UN ECOSOC Consultative Status.
-                        </p>
-                        <span>Institutional Growth ↗</span>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- ✦ PROPRIETARY GOVERNANCE INNOVATION: VERIFIAID™ ✦ -->
-        <section class="home-resource" id="governance">
-            <div class="resource-label">
-                <span>VerifiAid™</span>
-                <small>Governance Architecture</small>
-            </div>
-
-            <div class="resource-copy">
-                <p>Proprietary Assurance Innovation</p>
-                <h2>VerifiAid: 40-check partner assurance across six weighted risk categories.</h2>
-                <p class="resource-summary">
-                    Designed to eliminate blind spots in humanitarian delivery. VerifiAid evaluates delivery partners across legal registration, sanctions screening, financial health, safeguarding, delivery capacity, and on-site verification.
-                </p>
-                <div class="five-fs">
-                    <span onclick="openFrameworkModal()">1. Legal &amp; Registration</span>
-                    <span onclick="openFrameworkModal()">2. Sanctions &amp; AML</span>
-                    <span onclick="openFrameworkModal()">3. Financial Health</span>
-                    <span onclick="openFrameworkModal()">4. Safeguarding &amp; PSEA</span>
-                    <span onclick="openFrameworkModal()">5. Delivery Capacity</span>
-                    <span onclick="openFrameworkModal()">6. Field Verification</span>
-                </div>
-                <div class="resource-actions">
-                    <a href="#framework-modal" onclick="openFrameworkModal(); return false;">
-                        Explore the 40-check framework <b>→</b>
-                    </a>
-                    <a href="#experience">
-                        EmpactFlow in development <b>↗</b>
-                    </a>
+                <div>
+                    <button class="btn-gold-primary" onclick="openFrameworkModal()">
+                        <span>Launch 40-Check Matrix Explorer</span>
+                        <span>→</span>
+                    </button>
                 </div>
             </div>
 
-            <div class="resource-badge-box">
-                <strong>40</strong>
-                <span>Assurance Checks</span>
-                <small>6 Weighted Risk Tiers</small>
+            <!-- Overview Box -->
+            <div class="governance-overview-box">
+                <div class="governance-overview-copy">
+                    <p class="lead">
+                        Designed to eliminate operational blind spots in international charity delivery. VerifiAid™ replaces informal, ad-hoc reviews with an objective, institutional-grade due diligence framework.
+                    </p>
+                    <p class="details">
+                        Piloted across nine implementing partners at Minhaj Welfare Foundation, the model links legal compliance, sanctions screening, financial reserves, child safeguarding, delivery capacity, and on-site geotagged GPS verification to formal milestone payment approvals.
+                    </p>
+                </div>
+                <div class="governance-stats-card">
+                    <strong>40</strong>
+                    <span>Audit Checks</span>
+                    <div style="font-size: 11px; color: var(--gold); margin-top: 10px; font-weight: 800;">6 Weighted Categories</div>
+                </div>
+            </div>
+
+            <!-- Six Interactive Category Cards -->
+            <div class="pillar-tabs-container">
+                <!-- 01 -->
+                <div class="pillar-tab-card" onclick="openFrameworkModal()">
+                    <span class="num">TIER 01 · 15%</span>
+                    <h4>Due Diligence</h4>
+                    <small>Legal status, trust deed, board conflicts &amp; NGO registration validation.</small>
+                </div>
+
+                <!-- 02 -->
+                <div class="pillar-tab-card" onclick="openFrameworkModal()">
+                    <span class="num">TIER 02 · 20%</span>
+                    <h4>Sanctions &amp; AML</h4>
+                    <small>UN/UK OFSI screening, PEP checks, counter-terror financing &amp; anti-fraud protocols.</small>
+                </div>
+
+                <!-- 03 -->
+                <div class="pillar-tab-card" onclick="openFrameworkModal()">
+                    <span class="num">TIER 03 · 20%</span>
+                    <h4>Financial Health</h4>
+                    <small>Audited accounts, bank signatory mandates, reserve policies &amp; ledger reviews.</small>
+                </div>
+
+                <!-- 04 -->
+                <div class="pillar-tab-card" onclick="openFrameworkModal()">
+                    <span class="num">TIER 04 · 15%</span>
+                    <h4>Safeguarding</h4>
+                    <small>PSEA standards, child protection codes, whistleblower lines &amp; police vetting.</small>
+                </div>
+
+                <!-- 05 -->
+                <div class="pillar-tab-card" onclick="openFrameworkModal()">
+                    <span class="num">TIER 05 · 15%</span>
+                    <h4>Delivery Capacity</h4>
+                    <small>Field technical staffing, storage/cold-chain, logistics &amp; sub-contractor control.</small>
+                </div>
+
+                <!-- 06 -->
+                <div class="pillar-tab-card" onclick="openFrameworkModal()">
+                    <span class="num">TIER 06 · 15%</span>
+                    <h4>Site Verification</h4>
+                    <small>GPS water coordinates, independent inspections &amp; geotagged photo sign-offs.</small>
+                </div>
+            </div>
+
+            <!-- Footer Action Strip -->
+            <div class="governance-actions-strip">
+                <button class="btn-gold-primary" onclick="openFrameworkModal()">
+                    Explore Full 40-Check Audit Matrix <b>→</b>
+                </button>
+                <div class="empactflow-tag">
+                    <span class="badge">Next Generation</span>
+                    <span><strong>EmpactFlow™</strong> workflow automation engine currently in active development.</span>
+                </div>
             </div>
         </section>
 
@@ -405,7 +484,7 @@
                 <!-- Location 01 -->
                 <a href="#experience">
                     <article>
-                        <div class="location-bg-pattern" style="background: radial-gradient(circle at top right, #11a6b5 0%, #10263a 70%);"></div>
+                        <div class="location-bg-pattern" style="background: radial-gradient(circle at top right, #0d8275 0%, #0b1a28 75%);"></div>
                         <div class="location-shade" aria-hidden="true"></div>
                         <span>01</span>
                         <div class="location-mark" aria-hidden="true">✦</div>
@@ -420,7 +499,7 @@
                 <!-- Location 02 -->
                 <a href="#experience">
                     <article>
-                        <div class="location-bg-pattern" style="background: radial-gradient(circle at top right, #f3b61f 0%, #10263a 70%);"></div>
+                        <div class="location-bg-pattern" style="background: radial-gradient(circle at top right, #df9e35 0%, #0b1a28 75%);"></div>
                         <div class="location-shade" aria-hidden="true"></div>
                         <span>02</span>
                         <div class="location-mark" aria-hidden="true">✦</div>
@@ -435,7 +514,7 @@
                 <!-- Location 03 -->
                 <a href="#experience">
                     <article>
-                        <div class="location-bg-pattern" style="background: radial-gradient(circle at top right, #d5287c 0%, #10263a 70%);"></div>
+                        <div class="location-bg-pattern" style="background: radial-gradient(circle at top right, #c04930 0%, #0b1a28 75%);"></div>
                         <div class="location-shade" aria-hidden="true"></div>
                         <span>03</span>
                         <div class="location-mark" aria-hidden="true">✦</div>
@@ -450,7 +529,7 @@
                 <!-- Location 04 -->
                 <a href="#experience">
                     <article>
-                        <div class="location-bg-pattern" style="background: radial-gradient(circle at top right, #11a6b5 0%, #0c202d 70%);"></div>
+                        <div class="location-bg-pattern" style="background: radial-gradient(circle at top right, #0d8275 0%, #07131e 75%);"></div>
                         <div class="location-shade" aria-hidden="true"></div>
                         <span>04</span>
                         <div class="location-mark" aria-hidden="true">✦</div>
@@ -465,7 +544,7 @@
                 <!-- Location 05 -->
                 <a href="#experience">
                     <article>
-                        <div class="location-bg-pattern" style="background: radial-gradient(circle at top right, #b85238 0%, #10263a 70%);"></div>
+                        <div class="location-bg-pattern" style="background: radial-gradient(circle at top right, #df9e35 0%, #07131e 75%);"></div>
                         <div class="location-shade" aria-hidden="true"></div>
                         <span>05</span>
                         <div class="location-mark" aria-hidden="true">✦</div>
@@ -581,7 +660,7 @@
                     <p>Academic &amp; Methodological Foundation</p>
                     <h2>Education, certifications<br/>and technical toolkit.</h2>
                 </div>
-                <a href="#contact">Request full academic portfolio <span>→</span></a>
+                <a href="/cv">View complete résumé document <span>→</span></a>
             </div>
 
             <div class="credentials-grid">
@@ -679,7 +758,7 @@
                 <div class="contact-meta-card" onclick="copyToClipboard('mail@dayemmahmood.com', 'Email Address')">
                     <span class="meta-icon">✉</span>
                     <div>
-                        <div style="font-size: 10px; color: #768994; text-transform: uppercase; letter-spacing: 0.1em;">Email</div>
+                        <div style="font-size: 10px; color: #768994; text-transform: uppercase; letter-spacing: 0.1em;">Direct Email</div>
                         <strong>mail@dayemmahmood.com</strong>
                     </div>
                 </div>
@@ -700,11 +779,11 @@
                     </div>
                 </div>
 
-                <div class="contact-meta-card" onclick="window.print()">
+                <div class="contact-meta-card" onclick="window.location.href='/cv'">
                     <span class="meta-icon">📄</span>
                     <div>
-                        <div style="font-size: 10px; color: #768994; text-transform: uppercase; letter-spacing: 0.1em;">CV Document</div>
-                        <strong>Print / Save as PDF ↗</strong>
+                        <div style="font-size: 10px; color: #768994; text-transform: uppercase; letter-spacing: 0.1em;">Executive CV View</div>
+                        <strong>Printable Résumé Page ↗</strong>
                     </div>
                 </div>
             </div>
@@ -713,39 +792,48 @@
 
     <!-- ✦ EDITORIAL FOOTER ✦ -->
     <footer class="home-footer">
-        <a class="home-logo" href="#top">
-            Atae Dayem <span>✦</span>
+        <a class="brand-crest-group" href="#top" style="color: #fff;">
+            <div class="brand-crest" style="background: rgba(255,255,255,0.08); border-color: rgba(223, 158, 53, 0.5);">AD</div>
+            <div class="brand-titles">
+                <span class="brand-title-main" style="color: #fff; font-size: 18px;">
+                    Atae Dayem <span class="star">✦</span>
+                </span>
+                <span class="brand-title-sub" style="color: var(--gold);">Syed Mahmood Ullah</span>
+            </div>
         </a>
+
         <p>Strategic vision. Measurable impact.</p>
+
         <div>
             <a href="https://linkedin.com/in/ata-e-dayem-syed-mahmood-ullah" target="_blank" rel="noreferrer">LinkedIn ↗</a>
             <a href="mailto:mail@dayemmahmood.com">Email ↗</a>
             <a href="tel:+447563586168">Phone ↗</a>
-            <a href="javascript:window.print()">Print CV ↗</a>
+            <a href="/cv">CV View ↗</a>
         </div>
-        <small>© 2026 Atae Dayem Syed Mahmood Ullah. All rights reserved. Manchester, UK.</small>
+
+        <small>© 2026 Atae Dayem Syed Mahmood Ullah. All rights reserved. Manchester, United Kingdom.</small>
     </footer>
 
     <!-- ✦ VERIFIAID™ 40-CHECK FRAMEWORK MODAL ✦ -->
     <div class="modal-overlay" id="framework-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
         <div class="modal-content">
             <button class="modal-close" onclick="closeFrameworkModal()" aria-label="Close modal">&times;</button>
-            <div style="letter-spacing: 0.18em; color: var(--teal); font-size: 10px; font-weight: 900; text-transform: uppercase; margin-bottom: 8px;">
-                Proprietary Assurance Model
+            <div style="letter-spacing: 0.18em; color: var(--emerald); font-size: 10.5px; font-weight: 900; text-transform: uppercase; margin-bottom: 8px;">
+                Proprietary Assurance Architecture
             </div>
             <h2 id="modal-title" style="font-family: Georgia, serif; font-size: 32px; margin: 0 0 16px; color: var(--ink);">
                 VerifiAid™: 40-Check Partner Assurance Framework
             </h2>
-            <p style="color: #496270; font-size: 14px; line-height: 1.6; margin-bottom: 30px;">
+            <p style="color: var(--text-muted); font-size: 14.5px; line-height: 1.6; margin-bottom: 30px;">
                 Designed and piloted at Minhaj Welfare Foundation by Atae Dayem to replace informal partner assessments with an objective, institutional assurance system across six weighted risk categories.
             </p>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
                 <!-- Category 1 -->
-                <div style="background: #fff; padding: 20px; border: 1px solid rgba(16, 38, 58, 0.15);">
-                    <span style="font-size: 10px; font-weight: 900; color: var(--magenta); letter-spacing: 0.1em; text-transform: uppercase;">Category 01</span>
+                <div style="background: #fff; padding: 22px; border: 1px solid var(--parchment-border); border-radius: 12px;">
+                    <span style="font-size: 10px; font-weight: 900; color: var(--emerald); letter-spacing: 0.12em; text-transform: uppercase;">Category 01 · 15% Weight</span>
                     <h4 style="font-family: Georgia, serif; font-size: 18px; margin: 6px 0 10px; color: var(--ink);">Legal Due Diligence</h4>
-                    <ul style="font-size: 12px; color: #536b77; line-height: 1.6; padding-left: 16px; margin: 0;">
+                    <ul style="font-size: 12.5px; color: var(--text-muted); line-height: 1.65; padding-left: 16px; margin: 0;">
                         <li>Statutory NGO/charity registration validity</li>
                         <li>Governing constitution &amp; trust deed validation</li>
                         <li>Board trustee identity &amp; conflict registers</li>
@@ -756,10 +844,10 @@
                 </div>
 
                 <!-- Category 2 -->
-                <div style="background: #fff; padding: 20px; border: 1px solid rgba(16, 38, 58, 0.15);">
-                    <span style="font-size: 10px; font-weight: 900; color: var(--teal); letter-spacing: 0.1em; text-transform: uppercase;">Category 02</span>
+                <div style="background: #fff; padding: 22px; border: 1px solid var(--parchment-border); border-radius: 12px;">
+                    <span style="font-size: 10px; font-weight: 900; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase;">Category 02 · 20% Weight</span>
                     <h4 style="font-family: Georgia, serif; font-size: 18px; margin: 6px 0 10px; color: var(--ink);">Sanctions &amp; AML Risk</h4>
-                    <ul style="font-size: 12px; color: #536b77; line-height: 1.6; padding-left: 16px; margin: 0;">
+                    <ul style="font-size: 12.5px; color: var(--text-muted); line-height: 1.65; padding-left: 16px; margin: 0;">
                         <li>UN, UK OFSI &amp; international sanctions list checks</li>
                         <li>Politically Exposed Persons (PEP) screening</li>
                         <li>Counter-Terrorism Financing (CTF) protocols</li>
@@ -770,10 +858,10 @@
                 </div>
 
                 <!-- Category 3 -->
-                <div style="background: #fff; padding: 20px; border: 1px solid rgba(16, 38, 58, 0.15);">
-                    <span style="font-size: 10px; font-weight: 900; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase;">Category 03</span>
+                <div style="background: #fff; padding: 22px; border: 1px solid var(--parchment-border); border-radius: 12px;">
+                    <span style="font-size: 10px; font-weight: 900; color: var(--emerald); letter-spacing: 0.12em; text-transform: uppercase;">Category 03 · 20% Weight</span>
                     <h4 style="font-family: Georgia, serif; font-size: 18px; margin: 6px 0 10px; color: var(--ink);">Financial Health &amp; Audits</h4>
-                    <ul style="font-size: 12px; color: #536b77; line-height: 1.6; padding-left: 16px; margin: 0;">
+                    <ul style="font-size: 12.5px; color: var(--text-muted); line-height: 1.65; padding-left: 16px; margin: 0;">
                         <li>Three years of certified external audit reports</li>
                         <li>Dual-signatory bank account mandates</li>
                         <li>Budget variance threshold &amp; cost analysis</li>
@@ -784,10 +872,10 @@
                 </div>
 
                 <!-- Category 4 -->
-                <div style="background: #fff; padding: 20px; border: 1px solid rgba(16, 38, 58, 0.15);">
-                    <span style="font-size: 10px; font-weight: 900; color: var(--magenta); letter-spacing: 0.1em; text-transform: uppercase;">Category 04</span>
+                <div style="background: #fff; padding: 22px; border: 1px solid var(--parchment-border); border-radius: 12px;">
+                    <span style="font-size: 10px; font-weight: 900; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase;">Category 04 · 15% Weight</span>
                     <h4 style="font-family: Georgia, serif; font-size: 18px; margin: 6px 0 10px; color: var(--ink);">Safeguarding &amp; Protection</h4>
-                    <ul style="font-size: 12px; color: #536b77; line-height: 1.6; padding-left: 16px; margin: 0;">
+                    <ul style="font-size: 12.5px; color: var(--text-muted); line-height: 1.65; padding-left: 16px; margin: 0;">
                         <li>PSEA (Protection from Sexual Exploitation) policies</li>
                         <li>Child safeguarding &amp; residential care codes</li>
                         <li>Staff police checks &amp; reference verification</li>
@@ -798,10 +886,10 @@
                 </div>
 
                 <!-- Category 5 -->
-                <div style="background: #fff; padding: 20px; border: 1px solid rgba(16, 38, 58, 0.15);">
-                    <span style="font-size: 10px; font-weight: 900; color: var(--teal); letter-spacing: 0.1em; text-transform: uppercase;">Category 05</span>
+                <div style="background: #fff; padding: 22px; border: 1px solid var(--parchment-border); border-radius: 12px;">
+                    <span style="font-size: 10px; font-weight: 900; color: var(--emerald); letter-spacing: 0.12em; text-transform: uppercase;">Category 05 · 15% Weight</span>
                     <h4 style="font-family: Georgia, serif; font-size: 18px; margin: 6px 0 10px; color: var(--ink);">Delivery Capacity</h4>
-                    <ul style="font-size: 12px; color: #536b77; line-height: 1.6; padding-left: 16px; margin: 0;">
+                    <ul style="font-size: 12.5px; color: var(--text-muted); line-height: 1.65; padding-left: 16px; margin: 0;">
                         <li>Field staffing &amp; technical engineering expertise</li>
                         <li>Warehouse, storage &amp; cold-chain facilities</li>
                         <li>Past milestone delivery track record</li>
@@ -812,10 +900,10 @@
                 </div>
 
                 <!-- Category 6 -->
-                <div style="background: #fff; padding: 20px; border: 1px solid rgba(16, 38, 58, 0.15);">
-                    <span style="font-size: 10px; font-weight: 900; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase;">Category 06</span>
+                <div style="background: #fff; padding: 22px; border: 1px solid var(--parchment-border); border-radius: 12px;">
+                    <span style="font-size: 10px; font-weight: 900; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase;">Category 06 · 15% Weight</span>
                     <h4 style="font-family: Georgia, serif; font-size: 18px; margin: 6px 0 10px; color: var(--ink);">Field Verification &amp; GPS</h4>
-                    <ul style="font-size: 12px; color: #536b77; line-height: 1.6; padding-left: 16px; margin: 0;">
+                    <ul style="font-size: 12.5px; color: var(--text-muted); line-height: 1.65; padding-left: 16px; margin: 0;">
                         <li>GPS coordinate logging for all water wells</li>
                         <li>Independent on-site monitoring inspections</li>
                         <li>Timestamped &amp; geotagged photo/video proof</li>
@@ -826,9 +914,9 @@
                 </div>
             </div>
 
-            <div style="margin-top: 30px; text-align: center;">
-                <button class="contact-btn" onclick="closeFrameworkModal()" style="display: inline-block;">
-                    Close Explorer
+            <div style="margin-top: 36px; text-align: center;">
+                <button class="btn-hero-primary" onclick="closeFrameworkModal()" style="display: inline-flex;">
+                    Close Assurance Matrix
                 </button>
             </div>
         </div>

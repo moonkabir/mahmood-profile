@@ -15,8 +15,8 @@ class ProfilePageTest extends TestCase
 
         $response->assertStatus(200);
         $response->assertSee('Atae Dayem');
-        $response->assertSee('Strategic vision.');
-        $response->assertSee('Measurable impact.');
+        $response->assertSee('Strategic Governance');
+        $response->assertSee('Humanitarian Delivery at Scale');
         $response->assertSee('Minhaj Welfare Foundation');
         $response->assertSee('Dayemi Foundation');
         $response->assertSee('VerifiAid');
@@ -24,5 +24,19 @@ class ProfilePageTest extends TestCase
         $response->assertSee('mail@dayemmahmood.com');
         $response->assertSee('07563 586 168');
         $response->assertSee('UN ECOSOC');
+    }
+
+    /**
+     * Test the dedicated executive CV page renders successfully.
+     */
+    public function test_cv_page_renders_successfully(): void
+    {
+        $response = $this->get('/cv');
+
+        $response->assertStatus(200);
+        $response->assertSee('ATAE DAYEM SYED MAHMOOD ULLAH');
+        $response->assertSee('Professional Profile');
+        $response->assertSee('Selected Leadership Contributions');
+        $response->assertSee('VerifiAid');
     }
 }
