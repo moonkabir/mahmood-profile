@@ -1570,7 +1570,8 @@ a {
   color: var(--ink);
 }
 
-.home-contact > div {
+.home-contact .contact-cta-block,
+.home-contact > div:not(.contact-meta-cards) {
   flex-direction: column;
   align-items: center;
   gap: 16px;
@@ -1606,20 +1607,24 @@ a {
 
 .contact-meta-cards {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
   margin-top: 40px;
 }
 
 .contact-meta-card {
+  width: 100%;
+  max-width: 380px;
+  box-sizing: border-box;
+  text-align: left;
   background: var(--cream);
   border: 1px solid var(--parchment-border);
   padding: 16px 24px;
   border-radius: 12px;
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -1633,6 +1638,15 @@ a {
 
 .contact-meta-card span.meta-icon {
   font-size: 16px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+}
+
+.contact-meta-card > div {
+  text-align: left;
 }
 
 .contact-meta-card strong {

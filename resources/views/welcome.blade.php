@@ -743,7 +743,7 @@
         <section class="home-contact" id="contact">
             <p>For INGOs · Charitable Foundations · Institutional Donors · Boards of Trustees</p>
             <h2>Bring strategic clarity and disciplined governance to your humanitarian portfolio.</h2>
-            <div>
+            <div class="contact-cta-block">
                 <a class="contact-btn" href="mailto:mail@dayemmahmood.com">
                     <span>Contact Atae Dayem</span>
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
