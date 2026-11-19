@@ -13,10 +13,10 @@
     <meta property="og:description" content="Strategic Governance. Humanitarian Delivery at Scale. Bridging UK charity governance with field delivery across 13+ nations.">
     <meta property="og:type" content="website">
 
-    <!-- Preconnect & Google Fonts -->
+    <!-- Preconnect & Modern Google Fonts (Plus Jakarta Sans & Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -78,12 +78,82 @@
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
                 </button>
 
-                <button class="mobile-menu-trigger" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu">
-                    ☰
+                <button class="mobile-nav-toggle" onclick="toggleMobileMenu()" aria-label="Toggle mobile navigation menu">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
                 </button>
             </div>
         </div>
     </header>
+
+    <!-- ✦ RESPONSIVE MOBILE NAVIGATION DRAWER & BACKDROP ✦ -->
+    <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" onclick="closeMobileMenu()" aria-hidden="true"></div>
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+        <div class="mobile-drawer-header">
+            <a class="personal-brand-group" href="#top" onclick="closeMobileMenu()">
+                <div class="personal-brand-avatar" aria-hidden="true">AD</div>
+                <div class="personal-brand-text">
+                    <span style="font-weight: 800; font-size: 16px; color: var(--ink);">Atae Dayem</span>
+                    <p style="font-size: 9.5px; color: var(--emerald-dark); font-weight: 700; text-transform: uppercase;">Programmes &amp; Governance</p>
+                </div>
+            </a>
+            <button class="mobile-drawer-close" onclick="closeMobileMenu()" aria-label="Close menu">&times;</button>
+        </div>
+
+        <nav class="mobile-drawer-nav" aria-label="Mobile Drawer Navigation">
+            <a class="mobile-nav-link" href="#pillars">
+                <span>Core Capabilities</span>
+                <span class="arrow">→</span>
+            </a>
+            <a class="mobile-nav-link" href="#case-studies">
+                <span>Impact Case Studies</span>
+                <span class="arrow">→</span>
+            </a>
+            <a class="mobile-nav-link" href="#verifiaid">
+                <span>VerifiAid™ Due Diligence</span>
+                <span class="arrow">→</span>
+            </a>
+            <a class="mobile-nav-link" href="#intelligence-hub" style="color: var(--emerald-dark);">
+                <span>Dayem Intelligence Desk</span>
+                <span class="arrow">↗</span>
+            </a>
+            <a class="mobile-nav-link" href="#credentials">
+                <span>Academic Credentials</span>
+                <span class="arrow">→</span>
+            </a>
+            <a class="mobile-nav-link" href="#perspectives">
+                <span>Thought Leadership</span>
+                <span class="arrow">→</span>
+            </a>
+            <a class="mobile-nav-link" href="/cv" style="color: var(--gold-dark);">
+                <span>Executive CV (Printable PDF)</span>
+                <span class="arrow">↗</span>
+            </a>
+        </nav>
+
+        <div class="mobile-drawer-actions">
+            <button class="btn-editorial-primary" onclick="closeMobileMenu(); openBookingModal();" style="width: 100%; justify-content: center;">
+                <span>Invite Dayem / Book Consultation</span>
+                <span>→</span>
+            </button>
+            <a class="btn-editorial-secondary" href="/cv" style="width: 100%; justify-content: center;">
+                <span>View Formal CV Document</span>
+                <span>↗</span>
+            </a>
+            <a class="btn-editorial-gold" href="/intelligence" style="width: 100%; justify-content: center;">
+                <span>Visit Dayem Intelligence Desk ↗</span>
+            </a>
+        </div>
+
+        <div class="mobile-drawer-footer">
+            <strong style="color: var(--ink);">Manchester, United Kingdom</strong>
+            <span>Direct Email: <a href="mailto:mail@dayemmahmood.com" style="color: var(--emerald-dark); font-weight: 600;">mail@dayemmahmood.com</a></span>
+            <span>Phone / WhatsApp: <a href="tel:+447563586168" style="color: var(--ink); font-weight: 600;">07563 586 168</a></span>
+        </div>
+    </div>
 
     <main>
         <!-- ✦ HERO SECTION: EXECUTIVE PRESENCE & INTELLECTUAL GRAVITAS ✦ -->

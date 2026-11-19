@@ -147,17 +147,22 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // ✦ Mobile Navigation Menu ✦
-    const mobileMenu = document.getElementById('mobile-nav-drawer');
     window.toggleMobileMenu = function() {
+        const mobileMenu = document.getElementById('mobile-nav-drawer');
+        const backdrop = document.getElementById('mobile-nav-backdrop');
         if (mobileMenu) {
             const isOpen = mobileMenu.classList.toggle('active');
+            if (backdrop) backdrop.classList.toggle('active', isOpen);
             document.body.style.overflow = isOpen ? 'hidden' : '';
         }
     };
 
     window.closeMobileMenu = function() {
+        const mobileMenu = document.getElementById('mobile-nav-drawer');
+        const backdrop = document.getElementById('mobile-nav-backdrop');
         if (mobileMenu) {
             mobileMenu.classList.remove('active');
+            if (backdrop) backdrop.classList.remove('active');
             document.body.style.overflow = '';
         }
     };
@@ -173,9 +178,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ✦ Close mobile menu on clicking any navigation anchor ✦
-    document.querySelectorAll('#mobile-nav-drawer a').forEach(link => {
-        link.addEventListener('click', () => {
+    document.addEventListener('click', (e) => {
+        if (e.target.closest('#mobile-nav-drawer a') || e.target.id === 'mobile-nav-backdrop') {
             window.closeMobileMenu();
-        });
+        }
     });
 });
