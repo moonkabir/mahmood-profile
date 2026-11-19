@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="100%" height="auto" fill="none">
+  <defs>
+    <linearGradient id="oceanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EAEFEF" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#DEE7E6" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Clean Stylized Continents -->
+  <!-- North America / Europe (Faded/Context) -->
+  <path d="M70,40 Q110,35 150,50 Q180,70 170,110 Q140,120 120,100 Q80,120 70,80 Z" fill="#D3DCDD" opacity="0.45"/>
+  <path d="M260,35 Q300,30 330,55 Q340,85 300,95 Q280,75 260,65 Z" fill="#D3DCDD" opacity="0.45"/>
+
+  <!-- Global South Focus Continents -->
+  <!-- Latin America -->
+  <path d="M125,135 Q160,140 175,170 Q185,220 160,280 Q145,290 135,260 Q120,200 115,160 Z" fill="#0D8275" opacity="0.22" stroke="#0D8275" stroke-width="1.2"/>
+  
+  <!-- Africa -->
+  <path d="M260,105 Q315,100 340,135 Q355,180 340,240 Q305,275 285,250 Q260,200 250,150 Z" fill="#0D8275" opacity="0.25" stroke="#0D8275" stroke-width="1.2"/>
+
+  <!-- Middle East -->
+  <path d="M335,95 Q375,90 395,120 Q390,145 365,150 Q340,140 335,115 Z" fill="#0D8275" opacity="0.28" stroke="#0D8275" stroke-width="1.2"/>
+
+  <!-- South Asia -->
+  <path d="M395,115 Q435,110 455,145 Q445,185 425,190 Q400,165 395,130 Z" fill="#0D8275" opacity="0.3" stroke="#0D8275" stroke-width="1.2"/>
+
+  <!-- Southeast Asia -->
+  <path d="M455,145 Q495,150 510,185 Q490,215 460,205 Q445,180 455,155 Z" fill="#0D8275" opacity="0.25" stroke="#0D8275" stroke-width="1.2"/>
+
+  <!-- Pacific / Oceania -->
+  <path d="M495,220 Q550,215 565,255 Q540,290 495,275 Q480,245 495,220 Z" fill="#0D8275" opacity="0.2" stroke="#0D8275" stroke-width="1.2"/>
+
+  <!-- Data Callout Pins & Pills -->
+  <!-- Latin America 70M -->
+  <g transform="translate(90, 160)" filter="url(#shadow)">
+    <rect width="66" height="34" rx="6" fill="#0B1A28"/>
+    <text x="33" y="16" fill="#DF9E35" font-family="-apple-system, sans-serif" font-size="12" font-weight="800" text-anchor="middle">70M</text>
+    <text x="33" y="27" fill="#E2ECF2" font-family="-apple-system, sans-serif" font-size="7.5" font-weight="600" text-anchor="middle">L. America</text>
+  </g>
+
+  <!-- Africa 315M -->
+  <g transform="translate(265, 165)" filter="url(#shadow)">
+    <rect width="66" height="34" rx="6" fill="#0B1A28"/>
+    <text x="33" y="16" fill="#10B981" font-family="-apple-system, sans-serif" font-size="12" font-weight="800" text-anchor="middle">315M</text>
+    <text x="33" y="27" fill="#E2ECF2" font-family="-apple-system, sans-serif" font-size="7.5" font-weight="600" text-anchor="middle">Africa</text>
+  </g>
+
+  <!-- Middle East 180M -->
+  <g transform="translate(340, 75)" filter="url(#shadow)">
+    <rect width="66" height="34" rx="6" fill="#78350F"/>
+    <text x="33" y="16" fill="#FDE68A" font-family="-apple-system, sans-serif" font-size="12" font-weight="800" text-anchor="middle">180M</text>
+    <text x="33" y="27" fill="#FFFBEB" font-family="-apple-system, sans-serif" font-size="7.5" font-weight="600" text-anchor="middle">Middle East</text>
+  </g>
+
+  <!-- South Asia 290M -->
+  <g transform="translate(405, 80)" filter="url(#shadow)">
+    <rect width="68" height="34" rx="6" fill="#0B1A28"/>
+    <text x="34" y="16" fill="#38BDF8" font-family="-apple-system, sans-serif" font-size="12" font-weight="800" text-anchor="middle">290M</text>
+    <text x="34" y="27" fill="#E2ECF2" font-family="-apple-system, sans-serif" font-size="7.5" font-weight="600" text-anchor="middle">South Asia</text>
+  </g>
+
+  <!-- Southeast Asia 85M -->
+  <g transform="translate(485, 140)" filter="url(#shadow)">
+    <rect width="64" height="34" rx="6" fill="#78350F"/>
+    <text x="32" y="16" fill="#FDE68A" font-family="-apple-system, sans-serif" font-size="12" font-weight="800" text-anchor="middle">85M</text>
+    <text x="32" y="27" fill="#FFFBEB" font-family="-apple-system, sans-serif" font-size="7.5" font-weight="600" text-anchor="middle">SE Asia</text>
+  </g>
+
+  <!-- Pacific 12M -->
+  <g transform="translate(505, 235)" filter="url(#shadow)">
+    <rect width="56" height="30" rx="6" fill="#0F3832"/>
+    <text x="28" y="14" fill="#6EE7B7" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" text-anchor="middle">12M</text>
+    <text x="28" y="24" fill="#ECFDF5" font-family="-apple-system, sans-serif" font-size="7" font-weight="600" text-anchor="middle">Pacific</text>
+  </g>
+</svg>
