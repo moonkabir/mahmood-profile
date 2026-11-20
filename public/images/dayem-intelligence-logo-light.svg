@@ -1,12 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 54" width="320" height="54" fill="none">
-  <!-- Elegant Dm Monogram -->
-  <g transform="translate(4, 2)">
-    <circle cx="24" cy="24" r="23" fill="#152B3C" stroke="#DF9E35" stroke-width="1.5"/>
-    <text x="24" y="32" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="600" font-style="italic" fill="#FAF7F2" text-anchor="middle" letter-spacing="-0.5">Dm</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 50" width="340" height="50" fill="none">
+  <!-- Calligraphic Script Dm Monogram Light -->
+  <g transform="translate(2, 4)">
+    <!-- Elegant script D -->
+    <path d="M14 36 C10 36 6 33 6 28 C6 20 13 10 22 5 C27 2 32 1 35 3 C38 5 38 9 36 14 C33 21 27 29 20 33 C18 34 16 34.5 14 34.5 C12 34.5 11 33.5 11 31.5 C11 28 14 22 20 16 C23 13 27 10 30 8 C31 7.5 32 7.5 31.5 8.5 C29 14 24 23 18 30 C15 33.5 13 35 11.5 35" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M19 6 C17 12 15 22 14 34" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+    <!-- Connected script m -->
+    <path d="M29 23 C31 20 34 18 36.5 18 C38.5 18 39.5 19.5 39 22 C41 19.5 44 18 46.5 18 C49.5 18 50.5 20 49.5 24 C48.5 28 47.5 32 47 35" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M33 35 L36 21 M43 35 L45 22" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
   </g>
   <!-- Wordmark -->
-  <g transform="translate(62, 14)">
-    <text x="0" y="14" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="700" letter-spacing="0.08em" fill="#FFFFFF">DAYEM INTELLIGENCE</text>
-    <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" letter-spacing="0.14em" fill="#DF9E35" text-transform="uppercase">Humanitarian &amp; Development Intelligence</text>
+  <g transform="translate(64, 12)">
+    <text x="0" y="14" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16.5" font-weight="800" letter-spacing="0.07em" fill="#FFFFFF">DAYEM INTELLIGENCE</text>
+    <text x="0" y="28" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" letter-spacing="0.12em" fill="#5eead4" text-transform="uppercase">Humanitarian &amp; Development Intelligence</text>
   </g>
 </svg>

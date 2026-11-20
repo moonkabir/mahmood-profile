@@ -13,73 +13,56 @@
     <meta property="og:description" content="Strategic Governance. Humanitarian Delivery at Scale. Bridging UK charity governance with field delivery across 13+ nations.">
     <meta property="og:type" content="website">
 
-    <!-- Preconnect & Modern Google Fonts (Plus Jakarta Sans & Inter) -->
+    <!-- Preconnect & Modern Google Fonts (Newsreader, Plus Jakarta Sans, Inter, Caveat) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body id="top">
 
-    <!-- ✦ TOP STATUS & INTELLIGENCE DESK TICKER ✦ -->
-    <aside class="top-announcement-ribbon" aria-label="Executive Portfolio Status">
-        <div class="inner">
-            <div class="ribbon-tagline">
-                <span class="dot" aria-hidden="true"></span>
-                <span>Executive Portfolio · Programmes &amp; Transformation Leadership</span>
-            </div>
-            <div class="ribbon-actions">
-                <span class="badge-date">Manchester, UK · 18+ Years International Leadership</span>
-                <a href="#intelligence-hub" style="color: var(--gold); font-weight: 700;">Featured Venture: Dayem Intelligence Desk ↗</a>
-                <a href="#verifiaid" onclick="openFrameworkModal(); return false;">VerifiAid™ Due Diligence ↗</a>
-            </div>
-        </div>
-    </aside>
-
-    <!-- ✦ ELEVATED STICKY HEADER (SYED NAJAM & SAQIB QURESHI MODEL) ✦ -->
+    <!-- ✦ LUXURY FLOATING EXECUTIVE HEADER (SYED NAJAM & SAQIB QURESHI BENCHMARK) ✦ -->
     <header class="editorial-header">
         <div class="header-inner">
             <a class="personal-brand-group" href="#top" aria-label="Atae Dayem Home">
                 <div class="personal-brand-avatar" aria-hidden="true">AD</div>
                 <div class="personal-brand-text">
-                    <h1 class="name">Atae Dayem</h1>
-                    <p class="sub">Syed Mahmood Ullah · Programmes &amp; Governance Leader</p>
+                    <div class="name-row">
+                        <span class="name">Atae Dayem</span>
+                        <span class="star-accent">✦</span>
+                    </div>
+                    <p class="sub">Programmes &amp; Governance Leader</p>
                 </div>
             </a>
 
-            <!-- Editorial Nav -->
+            <!-- Streamlined Editorial Nav -->
             <nav class="header-nav" aria-label="Primary Navigation">
                 <a href="#pillars">Capabilities</a>
-                <a href="#case-studies">Case Showcases</a>
+                <a href="#case-studies">Case Studies</a>
                 <a href="#verifiaid">VerifiAid™</a>
-                <a href="#intelligence-hub">Dayem Intelligence</a>
+                <a class="nav-featured" href="#intelligence-hub">
+                    <span>Dayem Intelligence</span>
+                    <span style="font-size: 10px;">↗</span>
+                </a>
                 <a href="#credentials">Credentials</a>
                 <a href="#perspectives">Perspectives</a>
-                <a href="#booking-hub">Book / Invite</a>
             </nav>
 
             <!-- Actions: Discreet CV & Invite/Book (Syed Najam Model) -->
             <div class="header-actions">
-                <!-- Discrete CV Link in the corner as instructed by the client -->
-                <a class="btn-header-cv" href="/cv" title="View Printable Formal Résumé">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                <a class="header-cv-link" href="/cv" title="View Printable Formal Résumé">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
                     <span>Executive CV</span>
                 </a>
 
-                <!-- Dedicated Dayem Intelligence link pill -->
-                <a class="btn-header-cv" href="/intelligence" style="border-color: var(--emerald-border); color: var(--emerald-dark); font-weight: 800;" title="Visit Dayem Intelligence Desk">
-                    <span>Dayem Intelligence ↗</span>
-                </a>
-
-                <!-- Prominent Invite / Book CTA -->
-                <button class="btn-header-book" onclick="openBookingModal()" aria-label="Book a consultation or invite Dayem">
+                <button class="header-cta-btn" onclick="openBookingModal()" aria-label="Book a consultation or invite Dayem">
                     <span>Invite / Book Dayem</span>
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
                 </button>
 
                 <button class="mobile-nav-toggle" onclick="toggleMobileMenu()" aria-label="Toggle mobile navigation menu">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="3" y1="12" x2="21" y2="12"></line>
                         <line x1="3" y1="6" x2="21" y2="6"></line>
                         <line x1="3" y1="18" x2="21" y2="18"></line>

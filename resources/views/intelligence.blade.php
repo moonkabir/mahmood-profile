@@ -3,74 +3,60 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dayem Intelligence — Humanitarian &amp; Development Intelligence Desk</title>
+    <title>Dayem Intelligence — Humanitarian &amp; Development Intelligence</title>
     <meta name="description" content="Know What’s Changing. Find What’s Possible. Act with Evidence. Independent humanitarian and development intelligence, verified funding radar, due diligence architecture, and regional telemetry.">
     <meta name="author" content="Dayem Mahmood · Atae Dayem">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body id="top">
 
-    <!-- ✦ 1. TOP LIVE ANNOUNCEMENT RIBBON ✦ -->
-    <aside class="top-announcement-ribbon" aria-label="Intelligence Desk Status">
-        <div class="inner">
-            <div class="ribbon-tagline">
-                <span class="dot" aria-hidden="true"></span>
-                <span>People · Evidence · Partnerships · Stronger Futures</span>
-            </div>
-            <div class="ribbon-actions">
-                <a href="/" style="color: var(--gold); font-weight: 700;">← Founder Executive Profile (Atae Dayem)</a>
-                <span class="badge-date">Daily Edition · Autumn 2026</span>
-                <a href="#funding-radar">Funding Radar: <b>5 Active Calls</b> ↗</a>
-            </div>
+    <!-- ✦ 1. TOP STRAP (MATCHING MOCKUP) ✦ -->
+    <div class="intel-top-strap">
+        <div class="intel-top-strap-inner">
+            <span class="intel-strap-tagline">PEOPLE &nbsp;|&nbsp; EVIDENCE &nbsp;|&nbsp; PARTNERSHIPS &nbsp;|&nbsp; STRONGER FUTURES</span>
         </div>
-    </aside>
+    </div>
 
     <!-- ✦ 1. BRAND / NAVIGATION (DAYEM INTELLIGENCE) ✦ -->
-    <header class="editorial-header">
-        <div class="header-inner">
-            <a class="brand-group" href="/intelligence" aria-label="Dayem Intelligence Home">
-                <div class="brand-mark" aria-hidden="true">Dm</div>
-                <div class="brand-text">
-                    <h1 class="brand-title">Dayem Intelligence</h1>
-                    <p class="brand-sub">Humanitarian &amp; Development Intelligence</p>
-                </div>
+    <header class="intel-header">
+        <div class="intel-header-inner">
+            <a class="intel-brand-group" href="/intelligence" aria-label="Dayem Intelligence">
+                <img src="/images/dayem-intelligence-logo.svg" alt="Dayem Intelligence — Humanitarian &amp; Development Intelligence" class="intel-logo-img">
             </a>
 
-            <!-- Editorial Nav -->
-            <nav class="header-nav" aria-label="Primary Navigation">
+            <!-- Editorial Nav (Matches Mockup 1:1) -->
+            <nav class="intel-nav" aria-label="Dayem Intelligence Navigation">
+                <a href="/intelligence" class="active">Home</a>
                 <a href="#daily-brief">Daily Brief</a>
-                <a href="#funding-radar">Funding Radar</a>
-                <a href="#partner-radar">Partner Radar</a>
+                <a href="#funding-radar">Funding</a>
+                <a href="#partner-radar">Partners</a>
                 <a href="#global-south">Global South</a>
-                <a href="#sector-signals">Signals</a>
-                <a href="#leader-view">Leader’s View</a>
+                <a href="#products">Data Desk</a>
+                <a href="#leader-view">Programme Intelligence</a>
                 <a href="#resources">Resources</a>
-                <a href="/">About Founder</a>
+                <a href="/">About</a>
             </nav>
 
-            <!-- Actions: Discreet CV & Founder Profile -->
-            <div class="header-actions">
-                <a class="btn-header-cv" href="/cv" title="View Printable Formal Résumé">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                    <span>Executive CV</span>
-                </a>
+            <!-- Actions: Search & Subscribe & Mobile Toggle -->
+            <div class="intel-actions">
+                <button class="intel-btn-search" onclick="openSearchModal()" aria-label="Search Dayem Intelligence">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
 
-                <a class="btn-header-book" href="/" aria-label="View Founder Profile">
-                    <span>Founder Profile</span>
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                </a>
-
-                <a class="btn-header-subscribe" href="#newsletter">
+                <a class="intel-btn-subscribe" href="#newsletter">
                     <span>Subscribe</span>
                 </a>
 
                 <button class="mobile-nav-toggle" onclick="toggleMobileMenu()" aria-label="Toggle mobile navigation menu">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="3" y1="12" x2="21" y2="12"></line>
                         <line x1="3" y1="6" x2="21" y2="6"></line>
                         <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -84,17 +70,17 @@
     <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" onclick="closeMobileMenu()" aria-hidden="true"></div>
     <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
         <div class="mobile-drawer-header">
-            <a class="brand-group" href="/intelligence" onclick="closeMobileMenu()">
-                <div class="brand-mark" aria-hidden="true">Dm</div>
-                <div class="brand-text">
-                    <span style="font-weight: 800; font-size: 15px; color: var(--ink);">Dayem Intelligence</span>
-                    <p style="font-size: 9px; color: var(--emerald-dark); font-weight: 700; text-transform: uppercase;">Intelligence Desk</p>
-                </div>
+            <a class="intel-brand-group" href="/intelligence" onclick="closeMobileMenu()">
+                <img src="/images/dayem-intelligence-logo.svg" alt="Dayem Intelligence" style="height: 32px; width: auto;">
             </a>
             <button class="mobile-drawer-close" onclick="closeMobileMenu()" aria-label="Close menu">&times;</button>
         </div>
 
         <nav class="mobile-drawer-nav" aria-label="Mobile Drawer Navigation">
+            <a class="mobile-nav-link" href="/intelligence">
+                <span>Home</span>
+                <span class="arrow">→</span>
+            </a>
             <a class="mobile-nav-link" href="#daily-brief">
                 <span>Daily Brief</span>
                 <span class="arrow">→</span>
@@ -111,132 +97,131 @@
                 <span>Global South Watch</span>
                 <span class="arrow">→</span>
             </a>
-            <a class="mobile-nav-link" href="#sector-signals">
-                <span>Sector Signals</span>
+            <a class="mobile-nav-link" href="#products">
+                <span>Data Desk</span>
                 <span class="arrow">→</span>
             </a>
             <a class="mobile-nav-link" href="#leader-view">
-                <span>Leader’s View</span>
+                <span>Programme Intelligence</span>
                 <span class="arrow">→</span>
             </a>
             <a class="mobile-nav-link" href="#resources">
-                <span>Research &amp; Toolkits</span>
+                <span>Research &amp; Resources</span>
                 <span class="arrow">→</span>
             </a>
-            <a class="mobile-nav-link" href="/" style="color: var(--emerald-dark);">
-                <span>← Founder Portfolio (Atae Dayem)</span>
+            <a class="mobile-nav-link" href="/" style="color: var(--emerald-dark); font-weight: 700;">
+                <span>About Founder (Atae Dayem)</span>
                 <span class="arrow">↗</span>
             </a>
-            <a class="mobile-nav-link" href="/cv" style="color: var(--gold-dark);">
-                <span>Executive CV (Printable PDF)</span>
+            <a class="mobile-nav-link" href="/cv" style="color: var(--gold-dark); font-weight: 700;">
+                <span>Executive CV</span>
                 <span class="arrow">↗</span>
             </a>
         </nav>
 
         <div class="mobile-drawer-actions">
-            <a class="btn-editorial-primary" href="/#booking-hub" style="width: 100%; justify-content: center;">
-                <span>Invite Founder / Advisory</span>
+            <a class="btn-editorial-primary" href="#newsletter" onclick="closeMobileMenu();" style="width: 100%; justify-content: center;">
+                <span>Subscribe to Dayem Brief</span>
                 <span>→</span>
             </a>
-            <a class="btn-editorial-secondary" href="/" style="width: 100%; justify-content: center;">
-                <span>View Founder Profile</span>
-                <span>↗</span>
+            <button class="btn-editorial-secondary" onclick="closeMobileMenu(); openSearchModal();" style="width: 100%; justify-content: center;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <span style="margin-left: 6px;">Search Dayem Desk</span>
+            </button>
+            <a class="btn-editorial-gold" href="/" style="width: 100%; justify-content: center;">
+                <span>View Founder Profile ↗</span>
             </a>
         </div>
 
         <div class="mobile-drawer-footer">
-            <strong style="color: var(--ink);">Manchester, United Kingdom</strong>
-            <span>Direct Email: <a href="mailto:mail@dayemmahmood.com" style="color: var(--emerald-dark); font-weight: 600;">mail@dayemmahmood.com</a></span>
-            <span>Phone: <a href="tel:+447563586168" style="color: var(--ink); font-weight: 600;">07563 586 168</a></span>
+            <strong style="color: var(--ink);">Dayem Intelligence Desk</strong>
+            <span>Independent humanitarian and development intelligence.</span>
+            <span>Contact: <a href="mailto:mail@dayemmahmood.com" style="color: var(--emerald-dark); font-weight: 600;">mail@dayemmahmood.com</a></span>
         </div>
     </div>
 
     <main>
-        <!-- ✦ 2. HERO SECTION ✦ -->
-        <section class="hero-section">
+        <!-- ✦ 2. HERO SECTION (MATCHING MOCKUP EXACTLY) ✦ -->
+        <section class="intel-hero-section">
             <div class="container-editorial">
-                <div class="hero-grid">
-                    <div class="hero-copy">
-                        <div class="kicker-pill">
-                            <span>✦</span> Intelligence Desk · Autumn 2026 Edition
-                        </div>
+                <div class="intel-hero-grid">
+                    <div class="intel-hero-copy">
+                        <h1 class="intel-hero-headline">
+                            Know What’s Changing.<br>
+                            Find What’s Possible.<br>
+                            Act with Evidence.
+                        </h1>
 
-                        <h2 class="hero-headline">
-                            Know What’s Changing.<br/>
-                            Find What’s Possible.<br/>
-                            <em>Act with Evidence.</em>
-                        </h2>
-
-                        <p class="hero-lead">
-                            Independent humanitarian and development intelligence for a more effective, fairer and more resilient world. Curated and edited by <strong>Dayem Mahmood</strong> — translating senior operational experience into actionable donor telemetry and field evidence.
+                        <p class="intel-hero-lead">
+                            Independent humanitarian and development intelligence for a more effective, fairer and more resilient world.
                         </p>
 
-                        <div class="hero-actions-row">
-                            <a class="btn-editorial-primary" href="#daily-brief">
+                        <div class="intel-hero-actions">
+                            <a class="intel-btn-primary" href="#daily-brief">
                                 <span>Read Today’s Brief</span>
-                                <span>↓</span>
+                                <span>→</span>
                             </a>
-                            <a class="btn-editorial-secondary" href="#funding-radar">
+                            <a class="intel-btn-secondary" href="#funding-radar">
                                 <span>Explore Funding Opportunities</span>
-                                <span>↗</span>
-                            </a>
-                            <a class="btn-editorial-gold" href="/">
-                                <span>View Founder Executive Profile</span>
                                 <span>→</span>
                             </a>
                         </div>
                     </div>
 
-                    <div class="hero-portrait-card">
-                        <div class="portrait-photo-wrap">
-                            <img src="/images/dayem-portrait.jpg" alt="Dayem Mahmood — Editor &amp; Founder" onerror="this.onerror=null; this.src='/images/dayem-hero.jpg';" />
-                            <div class="portrait-badge-overlay">
-                                <strong>Dayem Mahmood</strong> · Editor &amp; Founder
-                            </div>
+                    <div class="intel-founder-card">
+                        <div class="intel-portrait-wrap">
+                            <img src="/images/dayem-portrait.jpg" alt="Dayem Mahmood — Editor &amp; Founder" class="intel-portrait-img" onerror="this.onerror=null; this.src='/images/dayem-hero.jpg';">
+                            <div class="intel-handwritten-quote">“Stronger People Fairer Futures”</div>
                         </div>
-
-                        <div class="portrait-caption">
-                            <p class="portrait-quote">“Stronger People, Fairer Futures”</p>
-                            <div class="portrait-meta">
-                                <div class="portrait-name">
-                                    <h2>Dayem Intelligence</h2>
-                                    <p>Humanitarian &amp; Development Intelligence</p>
-                                </div>
-                                <div class="portrait-seal">
-                                    <span>Manchester, UK</span><br/>
-                                    <a href="/" style="color: var(--emerald-dark); font-weight: 700;">Executive Advisory ↗</a>
-                                </div>
-                            </div>
+                        <div class="intel-founder-meta">
+                            <h2 class="intel-founder-name">DAYEM MAHMOOD</h2>
+                            <p class="intel-founder-role">Editor &amp; Founder</p>
+                            <p class="intel-founder-brand">Humanitarian &amp; Development Intelligence</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ✦ 3. CREDIBILITY STRIP ✦ -->
+        <!-- ✦ 3. CREDIBILITY STRIP (MATCHING MOCKUP) ✦ -->
         <section class="credibility-strip" aria-label="Quantified track record">
             <div class="container-editorial">
                 <div class="credibility-grid">
                     <div class="cred-metric-item">
+                        <div class="cred-icon-box">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                        </div>
                         <div class="val">18+</div>
                         <div class="lbl">Years’ experience in international development</div>
                     </div>
                     <div class="cred-metric-item">
+                        <div class="cred-icon-box">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        </div>
                         <div class="val">13+</div>
                         <div class="lbl">Countries of programme delivery</div>
                     </div>
                     <div class="cred-metric-item">
+                        <div class="cred-icon-box">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                        </div>
                         <div class="val">£1M+</div>
                         <div class="lbl">Programmes led and managed</div>
                     </div>
                     <div class="cred-metric-item">
+                        <div class="cred-icon-box">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
                         <div class="val">30+</div>
                         <div class="lbl">Staff and partners supported</div>
                     </div>
                     <div class="cred-pillars">
                         <span>Evidence</span>
+                        <span class="sep">|</span>
                         <span>Analysis</span>
+                        <span class="sep">|</span>
                         <span>Partnerships</span>
+                        <span class="sep">|</span>
                         <span>Practical Insight</span>
                     </div>
                 </div>
@@ -696,64 +681,123 @@
         </section>
     </main>
 
-    <!-- ✦ 13. INSTITUTIONAL FOOTER ✦ -->
-    <footer class="institutional-footer">
-        <div class="container-editorial">
-            <div class="footer-top-grid">
-                <div class="footer-brand">
-                    <h3>Dayem Intelligence</h3>
-                    <p>
-                        Independent humanitarian and development intelligence for a more effective, fairer and more resilient world.
+    <!-- ✦ 13. INSTITUTIONAL FOOTER (MATCHING MOCKUP 1:1) ✦ -->
+    <footer class="intel-footer-mockup">
+        <div class="intel-footer-inner">
+            <div class="intel-footer-top">
+                <div class="intel-footer-brand">
+                    <img src="/images/dayem-intelligence-logo-light.svg" alt="Dayem Intelligence" style="height: 38px; width: auto;">
+                    <p style="color: #94a3b8; font-size: 13px; line-height: 1.6; margin-top: 12px; max-width: 460px;">
+                        Humanitarian &amp; Development Intelligence · Know What’s Changing. Find What’s Possible. Act with Evidence.
                     </p>
-                    <p class="footer-quote">“Stronger People, Fairer Futures”</p>
+                    <div class="intel-footer-social-row">
+                        <a class="intel-footer-social-link" href="https://linkedin.com/in/ata-e-dayem-syed-mahmood-ullah" target="_blank" rel="noreferrer" title="LinkedIn">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a class="intel-footer-social-link" href="https://x.com" target="_blank" rel="noreferrer" title="X (Twitter)">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a class="intel-footer-social-link" href="https://youtube.com" target="_blank" rel="noreferrer" title="YouTube">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                        <a class="intel-footer-social-link" href="mailto:mail@dayemmahmood.com" title="Email Desk">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="footer-col">
-                    <h4>Intelligence Streams</h4>
-                    <ul>
-                        <li><a href="#daily-brief">Daily Brief</a></li>
-                        <li><a href="#funding-radar">Funding Radar</a></li>
-                        <li><a href="#partner-radar">Partner Radar</a></li>
-                        <li><a href="#global-south">Global South Watch</a></li>
-                        <li><a href="#sector-signals">Sector Signals</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Founder &amp; Executive</h4>
-                    <ul>
-                        <li><a href="/" style="color: var(--gold); font-weight: 700;">Atae Dayem Portfolio ↗</a></li>
-                        <li><a href="/#verifiaid">VerifiAid™ Due Diligence</a></li>
-                        <li><a href="/#case-studies">Impact Showcases</a></li>
-                        <li><a href="/cv">Executive CV (Printable PDF) ↗</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Institutional Standards</h4>
-                    <ul>
-                        <li><a href="#top" onclick="window.showToast('Methodology: Triangulated field telemetry and verified donor data.'); return false;">Methodology</a></li>
-                        <li><a href="#top" onclick="window.showToast('Corrections: We maintain strict transparency in editorial updates.'); return false;">Corrections Policy</a></li>
-                        <li><a href="#top" onclick="window.showToast('Privacy: We respect practitioner anonymity and strict data ethics.'); return false;">Privacy Policy</a></li>
-                        <li><a href="#top" onclick="window.showToast('Terms: Academic and institutional citation guidelines.'); return false;">Terms of Service</a></li>
-                        <li><a href="mailto:mail@dayemmahmood.com">Contact Editorial Desk</a></li>
-                    </ul>
+                <div class="intel-footer-quote-right">
+                    “Stronger People Fairer Futures”
                 </div>
             </div>
 
-            <div class="footer-bottom">
+            <!-- Horizontal Navigation Row Matching Mockup -->
+            <div class="intel-footer-nav-row">
+                <a href="/intelligence">Home</a>
+                <a href="#daily-brief">Daily Brief</a>
+                <a href="#funding-radar">Funding</a>
+                <a href="#partner-radar">Partners</a>
+                <a href="#global-south">Global South</a>
+                <a href="#products">Data Desk</a>
+                <a href="#leader-view">Programme Intelligence</a>
+                <a href="#resources">Resources</a>
+                <a href="/">About</a>
+                <a href="/cv" style="color: var(--gold-warm);">Executive CV ↗</a>
+            </div>
+
+            <!-- Bottom Legal Bar -->
+            <div class="intel-footer-bottom-row">
+                <div>© 2026 Dayem Intelligence. All rights reserved. Manchester, UK.</div>
                 <div>
-                    © 2026 Dayem Intelligence · Atae Dayem Syed Mahmood Ullah. All rights reserved. Manchester, United Kingdom.
-                </div>
-                <div style="display: flex; gap: 16px; align-items: center;">
-                    <a href="/">Founder Profile ↗</a>
-                    <a href="https://linkedin.com/in/ata-e-dayem-syed-mahmood-ullah" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-                    <a href="mailto:mail@dayemmahmood.com">mail@dayemmahmood.com</a>
-                    <a href="/cv" style="color: var(--gold);">Formal CV Document ↗</a>
+                    <a href="#top" onclick="window.showToast('Methodology: Triangulated field telemetry and verified donor data.'); return false;">Methodology</a>
+                    <a href="#top" onclick="window.showToast('Corrections: We maintain strict transparency in editorial updates.'); return false;">Corrections</a>
+                    <a href="#top" onclick="window.showToast('Privacy: We respect practitioner anonymity and strict data ethics.'); return false;">Privacy</a>
+                    <a href="#top" onclick="window.showToast('Terms: Academic and institutional citation guidelines.'); return false;">Terms</a>
+                    <a href="mailto:mail@dayemmahmood.com">Contact</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- ✦ LIVE SEARCH MODAL ✦ -->
+    <div class="search-modal-backdrop" id="search-modal" role="dialog" aria-modal="true" aria-label="Search Dayem Intelligence">
+        <div class="search-modal-card">
+            <div class="search-input-wrap">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" id="search-input-field" class="search-input-field" placeholder="Search Dayem Intelligence (e.g. FCDO, Localisation, Yemen, ECHO)..." oninput="filterSearchResults(this.value)" autocomplete="off">
+                <button class="search-close-btn" onclick="closeSearchModal()" aria-label="Close search">&times;</button>
+            </div>
+            <div class="search-quick-tags">
+                <span>Quick filters:</span>
+                <button class="search-tag-pill" onclick="setSearchQuery('FCDO')">FCDO</button>
+                <button class="search-tag-pill" onclick="setSearchQuery('Localisation')">Localisation</button>
+                <button class="search-tag-pill" onclick="setSearchQuery('Yemen')">Yemen</button>
+                <button class="search-tag-pill" onclick="setSearchQuery('ECHO')">ECHO</button>
+                <button class="search-tag-pill" onclick="setSearchQuery('Climate')">Climate</button>
+                <button class="search-tag-pill" onclick="setSearchQuery('Due Diligence')">Due Diligence</button>
+            </div>
+            <div class="search-results-box" id="search-results-box">
+                <a class="search-result-item" href="#funding-radar" onclick="closeSearchModal()">
+                    <span class="item-cat">Funding Radar · Open Call</span>
+                    <div class="item-title">FCDO – Climate Resilient Livelihoods Programme (£10m – £25m)</div>
+                    <div class="item-desc">Global South funding window targeting climate adaptation and resilient livelihoods. Deadline: 30 Sep 2026.</div>
+                </a>
+                <a class="search-result-item" href="#funding-radar" onclick="closeSearchModal()">
+                    <span class="item-cat">Funding Radar · Open Call</span>
+                    <div class="item-title">EU – Humanitarian Aid (ECHO) (€5m – €50m)</div>
+                    <div class="item-desc">Multiple countries emergency response and protection funding. Deadline: 15 Oct 2026.</div>
+                </a>
+                <a class="search-result-item" href="#funding-radar" onclick="closeSearchModal()">
+                    <span class="item-cat">Funding Radar · Partner Search</span>
+                    <div class="item-title">WFP – Local Implementing Partners (Multiple awards)</div>
+                    <div class="item-desc">Africa &amp; Asia distribution, nutrition, and emergency food delivery. Ongoing roster.</div>
+                </a>
+                <a class="search-result-item" href="#daily-brief" onclick="closeSearchModal()">
+                    <span class="item-cat">Today’s Brief · Briefing 01</span>
+                    <div class="item-title">Global humanitarian financing under renewed pressure in 2026</div>
+                    <div class="item-desc">Major humanitarian appeals less than 40% funded on average across crisis theaters.</div>
+                </a>
+                <a class="search-result-item" href="#daily-brief" onclick="closeSearchModal()">
+                    <span class="item-cat">Today’s Brief · Briefing 02</span>
+                    <div class="item-title">Conflict &amp; Displacement: Yemen displacement reaches new high</div>
+                    <div class="item-desc">Humanitarian access and protection concerns intensify across governorates.</div>
+                </a>
+                <a class="search-result-item" href="#leader-view" onclick="closeSearchModal()">
+                    <span class="item-cat">Programme Leader’s View · Analysis</span>
+                    <div class="item-title">What humanitarian organisations need to get right on localisation in 2026</div>
+                    <div class="item-desc">Five practical steps for programme leaders to turn policy into field practice.</div>
+                </a>
+                <a class="search-result-item" href="#resources" onclick="closeSearchModal()">
+                    <span class="item-cat">Research &amp; Resources · Toolkit</span>
+                    <div class="item-title">Partner Due Diligence Audit Matrix (VerifiAid™ 40-Check Model)</div>
+                    <div class="item-desc">Standardised fiduciary and safeguarding compliance matrix for national NGOs.</div>
+                </a>
+                <div id="search-no-results" style="display: none; padding: 24px; text-align: center; color: #64748b; font-size: 13.5px;">
+                    No intelligence records matching your query. Try another keyword like <em>FCDO</em>, <em>Localisation</em>, or <em>Climate</em>.
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Article Modal -->
     <div class="modal-overlay" id="article-modal" role="dialog" aria-modal="true" aria-labelledby="article-modal-title">
@@ -787,6 +831,9 @@
             </div>
         </div>
     </div>
+
+</body>
+</html>
 
 </body>
 </html>

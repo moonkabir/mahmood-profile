@@ -1,5 +1,74 @@
 // Dayem Intelligence & Executive Advisory - Interactive Scripts
 
+// Attach handlers immediately so inline onclick calls always resolve
+window.toggleMobileMenu = function() {
+    const mobileMenu = document.getElementById('mobile-nav-drawer');
+    const backdrop = document.getElementById('mobile-nav-backdrop');
+    if (mobileMenu) {
+        const isOpen = mobileMenu.classList.toggle('active');
+        if (backdrop) backdrop.classList.toggle('active', isOpen);
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+};
+
+window.closeMobileMenu = function() {
+    const mobileMenu = document.getElementById('mobile-nav-drawer');
+    const backdrop = document.getElementById('mobile-nav-backdrop');
+    if (mobileMenu) {
+        mobileMenu.classList.remove('active');
+        if (backdrop) backdrop.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+};
+
+// ✦ Search Modal Controls ✦
+window.openSearchModal = function() {
+    const searchModal = document.getElementById('search-modal');
+    if (searchModal) {
+        searchModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        setTimeout(() => {
+            const input = searchModal.querySelector('.search-input-field');
+            if (input) input.focus();
+        }, 100);
+    }
+};
+
+window.closeSearchModal = function() {
+    const searchModal = document.getElementById('search-modal');
+    if (searchModal) {
+        searchModal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+};
+
+window.setSearchQuery = function(term) {
+    const input = document.getElementById('search-input-field');
+    if (input) {
+        input.value = term;
+        window.filterSearchResults(term);
+    }
+};
+
+window.filterSearchResults = function(query) {
+    const q = (query || '').toLowerCase().trim();
+    const items = document.querySelectorAll('.search-result-item');
+    let visibleCount = 0;
+    items.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        if (!q || text.includes(q)) {
+            item.style.display = 'block';
+            visibleCount++;
+        } else {
+            item.style.display = 'none';
+        }
+    });
+    const emptyNotice = document.getElementById('search-no-results');
+    if (emptyNotice) {
+        emptyNotice.style.display = visibleCount === 0 ? 'block' : 'none';
+    }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     // ✦ Toast Notification Helper ✦
     window.showToast = function(message) {
@@ -136,6 +205,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // ✦ Search Modal Click Outside ✦
+    const searchModal = document.getElementById('search-modal');
+    if (searchModal) {
+        searchModal.addEventListener('click', (e) => {
+            if (e.target === searchModal) {
+                window.closeSearchModal();
+            }
+        });
+    }
+
     // ✦ Newsletter Subscription Handler ✦
     window.handleNewsletterSubmit = function(e) {
         e.preventDefault();
@@ -146,33 +225,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // ✦ Mobile Navigation Menu ✦
-    window.toggleMobileMenu = function() {
-        const mobileMenu = document.getElementById('mobile-nav-drawer');
-        const backdrop = document.getElementById('mobile-nav-backdrop');
-        if (mobileMenu) {
-            const isOpen = mobileMenu.classList.toggle('active');
-            if (backdrop) backdrop.classList.toggle('active', isOpen);
-            document.body.style.overflow = isOpen ? 'hidden' : '';
-        }
-    };
-
-    window.closeMobileMenu = function() {
-        const mobileMenu = document.getElementById('mobile-nav-drawer');
-        const backdrop = document.getElementById('mobile-nav-backdrop');
-        if (mobileMenu) {
-            mobileMenu.classList.remove('active');
-            if (backdrop) backdrop.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-    };
-
     // ✦ Global ESC Handler ✦
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             window.closeBookingModal();
             window.closeFrameworkModal();
             window.closeArticleModal();
+            window.closeSearchModal();
             window.closeMobileMenu();
         }
     });
