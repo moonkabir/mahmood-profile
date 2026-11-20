@@ -6,6 +6,10 @@
     <title>CV — Atae Dayem Syed Mahmood Ullah | International Programmes &amp; Transformation Leader</title>
     <meta name="robots" content="noindex, nofollow">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
     <style>
         :root {
             --ink: #10263a;
@@ -76,8 +80,9 @@
         }
 
         h1.cv-name {
-            font-family: Georgia, serif;
-            font-size: 32px;
+            font-family: "Plus Jakarta Sans", -apple-system, sans-serif;
+            font-weight: 800;
+            font-size: 30px;
             letter-spacing: -0.02em;
             color: var(--ink);
             line-height: 1.1;
